@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		{% render "head/title" %}
+		{% render "head/styles" %}
+	</head>
+	<body>
+		<header class="cmp-site-header">
+			<div class="obj-page-width">
+				<div class="cmp-site-header__logo">
+					<a href="/" class="cmp-site-header__logo-link" aria-label="Propulsion Home">
+						{% render 'logo.svg' %}
+					</a>
+				</div>
+			</div>
+		</header>
+		<div class="obj-page">
+			<div class="util-position-relative">
+				{% include 'nav' %}
+			</div>
+			<main>
+				<header>
+					<h2>{{ title }}</h2>
+				</header>
+				{{ content }}
+			</main>
+			<footer class="cmp-footer">
+				<div class="obj-page-width">
+					<div class="cmp-footer__container">
+						<a href="{{ pkg.repository.url }}/blob/main/src{{ page.filePathStem }}">Edit this Page</a>
+						<span>From your friends at <a href="https://sparkbox.com">Sparkbox</a></span>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		{% render "head/title" %}
+		{% render "head/styles" %}
+	</head>
+	<body>
+		<header>
+			{% include 'logo.svg' %}
+		</header>
+		{{ content }}
+	</body>
+</html>

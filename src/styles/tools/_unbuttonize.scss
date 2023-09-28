@@ -1,0 +1,11 @@
+@mixin unbuttonize {
+	appearance: none;
+	background-color: unset;
+	color: inherit;
+	border: unset;
+	margin: unset;
+	padding: unset;
+	text-align: inherit;
+	font: inherit;
+	border-radius: unset;
+}

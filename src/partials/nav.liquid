@@ -1,0 +1,31 @@
+<nav class="cmp-nav">
+	<ul class="cmp-nav__list">
+		{% for item in navigation %}
+			{% assign currentPage = page.url | replace_last: '/', '' %}
+			{% assign itemURL = item.permalink | replace: '.md', '' | replace: '/index', '' %}
+			{% assign isActive = '' %}
+			{% if currentPage == itemURL %}
+				{% assign isActive = ' cmp-nav__item--is-active' %}
+			{% endif %}
+			<li class="cmp-nav__item{{isActive}}">
+				<a href="{{ itemURL }}" class="cmp-nav__link">{{ item.title }}</a>
+				{% if item.children %}
+					<ul class="cmp-nav__list cmp-nav__list--sublist">
+							{% for item in item.children %}
+							{% assign itemURL = item.permalink | replace: '.md', '' | replace: '/index', '' %}
+							{% assign isActiveChild = '' %}
+							{% if currentPage == itemURL %}
+								{% assign isActiveChild = ' cmp-nav__item--is-active' %}
+							{% endif %}
+							{% if item.index != true %}
+								<li  class="cmp-nav__item{{isActiveChild}}">
+									<a href="{{ item.permalink | replace: '.md', '' }}" class="cmp-nav__link">{{ item.title }}</a>
+								</li>
+							{% endif %}
+						{% endfor %}
+					</ul>
+				{% endif %}
+			</li>
+		{% endfor %}
+	</ul>
+</nav>

@@ -1,0 +1,8 @@
+<li>
+	<a href="{% item.path | replace: '.md', '' %}">{{ item.name }}</a>
+	{% if item.children %}
+		{% for child in item.children %}
+			{% include 'nav_item', item: child %}
+		{% endfor %}
+	{% endif %}
+</li>

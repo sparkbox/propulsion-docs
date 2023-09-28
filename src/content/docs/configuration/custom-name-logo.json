@@ -1,0 +1,29 @@
+{
+  "tableName": "Configuration Logo and Name",
+  "headings": [
+    {
+      "name": "Parameter",
+      "width": "25%"
+    },
+    {
+      "name": "Default Value",
+      "width": "25%"
+    },
+    {
+      "name": "Description",
+      "width": "50%"
+    }
+  ],
+  "rows": [
+    {
+      "parameter": "`projectName`",
+      "default_value": "`\"\"`",
+      "description": "This is the project name, it will fill in the `<title>` and be displayed in the side bar top if no logo is provided."
+    },
+    {
+      "parameter": "`projectLogo`",
+      "default_value": "`\"\"`",
+      "description": "This is the project logo, it will is displayed in the side bar top."
+    }
+  ]
+}

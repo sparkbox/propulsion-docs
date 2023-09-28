@@ -1,0 +1,48 @@
+@use '../tools/visually-hidden' as mixin;
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	margin-block: var(--size-4) var(--size-8);
+}
+
+caption {
+	@include mixin.visually-hidden;
+}
+
+thead {
+	border-block-end: 2px solid var(--gray-4);
+
+	@media (prefers-color-scheme: dark) {
+		border-color: var(--gray-11);
+	}
+}
+
+th, td {
+	text-align: start;
+	padding: var(--size-2);
+}
+
+tbody > tr {
+	border-block-end: 1px solid var(--gray-4);
+
+	@media (prefers-color-scheme: dark) {
+		border-color: var(--gray-11);
+	}
+}
+
+tbody > tr:nth-child(odd) {
+	background-color: var(--gray-0);
+
+	@media (prefers-color-scheme: dark) {
+		background-color: var(--gray-9);
+	}
+}
+
+tbody > tr:nth-child(even) {
+	background-color: var(--gray-2);
+
+	@media (prefers-color-scheme: dark) {
+		background-color: var(--gray-8);
+	}
+}

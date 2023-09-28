@@ -1,0 +1,12 @@
+.cmp-footer {
+	grid-column: 2;
+	border-block-start: var(--size-1) solid;
+	border-image: linear-gradient(to bottom right, var(--blue-5), var(--blue-9)) 1;
+	padding-block: var(--size-4);
+	margin-block-start: var(--size-8);
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+	}
+}

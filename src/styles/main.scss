@@ -1,0 +1,29 @@
+// BEM Structure
+// 1. Settings
+
+
+// 2. Tools
+// 3. Generics
+@forward 'generics/normalize';
+@forward 'generics/responsive';
+
+// 4. Elements
+@forward 'elements/body';
+@forward 'elements/text-blocks';
+@forward 'elements/text-inlines';
+@forward 'elements/table';
+
+// 5. Obejcts
+@forward 'objects/page';
+
+// 6. Components
+@forward 'components/site-header';
+@forward 'components/site-footer';
+@forward 'components/nav';
+@forward 'components/logo';
+
+// 7. Vendors
+@forward 'vendors/prism';
+
+// 8. Utilities
+@forward 'utilities/position';

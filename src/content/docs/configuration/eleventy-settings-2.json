@@ -1,0 +1,29 @@
+{
+  "tableName": "CSS File Location",
+  "headings": [
+    {
+      "name": "Parameter",
+      "width": "25%"
+    },
+    {
+      "name": "Default Value",
+      "width": "25%"
+    },
+    {
+      "name": "Description",
+      "width": "50%"
+    }
+  ],
+  "rows": [
+    {
+      "parameter": "`styleCompilePath`",
+      "default_value": "`./dist/css`",
+      "description": "This is the path for where to."
+    },
+    {
+      "parameter": "`styleCompileFile`",
+      "default_value": "`main.css`",
+      "description": "This is the project logo, it will is displayed in the side bar top."
+    }
+  ]
+}
