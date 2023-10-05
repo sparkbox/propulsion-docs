@@ -28,7 +28,7 @@
 			<footer class="cmp-footer">
 				<div class="obj-page-width">
 					<div class="cmp-footer__container">
-						<a href="{{ pkg.repository.url }}/blob/main/src{{ page.filePathStem }}">Edit this Page</a>
+						<a href="{{ pkg.repository.url }}/blob/main/{{ page.inputPath | replace: './', '' }}">Edit this Page</a>
 						<span>From your friends at <a href="https://sparkbox.com">Sparkbox</a></span>
 					</div>
 				</div>
