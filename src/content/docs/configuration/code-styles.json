@@ -1,0 +1,84 @@
+{
+  "tableName": "User Interface Styles",
+  "headings": [
+    {
+      "name": "Parameter",
+      "width": "25%"
+    },
+    {
+      "name": "Type",
+      "width": "25%"
+    },
+    {
+      "name": "Description",
+      "width": "50%"
+    }
+  ],
+  "rows": [
+    {
+      "parameter": "`codeFont`",
+      "type": "Font Stack List",
+      "description": "Defines the font stack used for code blocks"
+    },
+    {
+      "parameter": "`codeDefaultBackground`",
+      "type": "Color: `hsl()`, HEX, etc.",
+      "description": "Sets the background color for the code block"
+    },
+    {
+      "parameter": "`codeDefaultColor`",
+      "type": "Color: `hsl()`, HEX, etc.",
+      "description": "Defines the default color"
+    },
+    {
+      "parameter": "`codeCommentColor`",
+      "type": "Color: `hsl()`, HEX, etc.",
+      "description": "Defines the color for comments"
+    },
+    {
+      "parameter": "`codePunctuationColor`",
+      "type": "Color: `hsl()`, HEX, etc.",
+      "description": "Defines the color punctuation"
+    },
+    {
+      "parameter": "`codeTagColor`",
+      "type": "Color: `hsl()`, HEX, etc.",
+      "description": "Defines the color for attribute names, deleted blocks, namespaces, and markup tags"
+    },
+    {
+      "parameter": "`codeNameColor`",
+      "type": "Color: `hsl()`, HEX, etc.",
+      "description": "Defines the color for the name of function declaration"
+    },
+    {
+      "parameter": "`codeNumberColor`",
+      "type": "Color: `hsl()`, HEX, etc.",
+      "description": "Defines the color for booleans, functions, and numbers"
+    },
+    {
+      "parameter": "`codePropertyColor`",
+      "type": "Color: `hsl()`, HEX, etc.",
+      "description": "Defines the color for class names, constants, properties, and symbols"
+    },
+    {
+      "parameter": "`codeRuleColor`",
+      "type": "Color: `hsl()`, HEX, etc.",
+      "description": "Defines the color for at-rules, important, keywords, and selectors."
+    },
+    {
+      "parameter": "`codeValueColor`",
+      "type": "Color: `hsl()`, HEX, etc.",
+      "description": "Defilnes the color for attribute values, char, regex, strings, and variables"
+    },
+    {
+      "parameter": "`codeOperatorColor`",
+      "type": "Color: `hsl()`, HEX, etc.",
+      "description": "Defines the color of an entity, operator, and url"
+    },
+    {
+      "parameter": "`codeInsertedColor`",
+      "type": "Color: `hsl()`, HEX, etc.",
+      "description": "Defines the color for inserted blocks"
+    }
+  ]
+}

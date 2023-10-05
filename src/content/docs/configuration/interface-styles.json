@@ -1,0 +1,84 @@
+{
+  "tableName": "User Interface Styles",
+  "headings": [
+    {
+      "name": "Parameter",
+      "width": "25%"
+    },
+    {
+      "name": "Type",
+      "width": "25%"
+    },
+    {
+      "name": "Description",
+      "width": "50%"
+    }
+  ],
+  "rows": [
+    {
+      "parameter": "`fontFamily`",
+      "type": "Font Stack List",
+      "description": "Default font for the Propulsion interface, including the toolbars and documentation"
+    },
+    {
+      "parameter": "`uiBackgroundColor`",
+      "type": "Color: `hsl()`, HEX, etc.",
+      "description": "Background color for the vertical and horizontal toolbars"
+    },
+    {
+      "parameter": "`uiBorderWidth`",
+      "type": "Unit Value: `px`, `rem`, etc.",
+      "description": "Border thickness between sections and elements"
+    },
+    {
+      "parameter": "`uiBorderColor`",
+      "type": "Color: `hsl()`, HEX, etc.",
+      "description": "Border color between sections and elements"
+    },
+    {
+      "parameter": "`uiLinkDefaultColor`",
+      "type": "Color: `hsl()`, HEX, etc.",
+      "description": "Documentation default link color"
+    },
+    {
+      "parameter": "`uiLinkHoverColor`",
+      "type": "Color: `hsl()`, HEX, etc.",
+      "description": "Documentation hover state link color"
+    },
+    {
+      "parameter": "`uiLinkVisitedColor`",
+      "type": "Color: `hsl()`, HEX, etc.",
+      "description": "Documentation visited state link color"
+    },
+    {
+      "parameter": "`uiSidebarWidth`",
+      "type": "Unit Value: `px`, `rem`, etc.",
+      "description": "Width of the navigation toolbar"
+    },
+    {
+      "parameter": "`uiNavTextColor`",
+      "type": "Color: `hsl()`, HEX, etc.",
+      "description": "Navigation button default text color"
+    },
+    {
+      "parameter": "`uiNavTextHoverColor`",
+      "type": "Color: `hsl()`, HEX, etc.",
+      "description": "Navigation button hover state text color"
+    },
+    {
+      "parameter": "`uiNavBackgroundHoverColor`",
+      "type": "Color: `hsl()`, HEX, etc.",
+      "description": "Navigation button hover state background color"
+    },
+    {
+      "parameter": "`uiNavTextActiveColor`",
+      "type": "Color: `hsl()`, HEX, etc.",
+      "description": "Navigation button active state text color"
+    },
+    {
+      "parameter": "`uiNavBackgroundActiveColor`",
+      "type": "Color: `hsl()`, HEX, etc.",
+      "description": "Navigation button active state background color"
+    }
+  ]
+}

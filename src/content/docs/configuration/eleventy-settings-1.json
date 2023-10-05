@@ -6,7 +6,7 @@
       "width": "25%"
     },
     {
-      "name": "Default Value",
+      "name": "Default Type",
       "width": "25%"
     },
     {
@@ -16,14 +16,19 @@
   ],
   "rows": [
     {
-      "parameter": "`styleCompilePath`",
-      "default_value": "`./dist/css`",
-      "description": "This is the path for where to."
+      "parameter": "`defaultTemplateEngine`",
+      "default_type": "String or `false`",
+      "description": "Define a template language or set to `false`"
     },
     {
-      "parameter": "`styleCompileFile`",
-      "default_value": "`main.css`",
-      "description": "This is the project logo, it will is displayed in the side bar top."
+      "parameter": "`defaultMarkdownEngine`",
+      "default_type": "String or `false`",
+      "description": "Define a template language or set to `false`"
+    },
+    {
+      "templateFormats": "`defaultMarkdownEngine`",
+      "default_type": "Array",
+      "description": "Provide a comma-separated list of supported template formats within square brackets"
     }
   ]
 }

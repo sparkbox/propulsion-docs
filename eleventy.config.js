@@ -118,11 +118,18 @@ module.exports = function(eleventyConfig) {
 	// Markdown overrides:
 	// all heading levels 2-6 will automatically be given
 	// an id that can be used for jumplink href's
-	let markdownLibrary = markdownIt({		html: true,
+	let markdownLibrary = markdownIt({
+		html: true,
 		breaks: false,
 		linkify: true
 	}).use(markdownItAnchor, {
-		level: 2,
+		tabIndex: false,
+		uniqueSlugStartIndex: 1,
+		level: [2, 3, 4],
+		permalink: markdownItAnchor.permalink.headerLink({
+			class:"cmp-page-link",
+			safariReaderFix: true
+		})
 	});
 
 	eleventyConfig.setLibrary("md", markdownLibrary);

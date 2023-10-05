@@ -6,7 +6,7 @@
       "width": "25%"
     },
     {
-      "name": "Default Value",
+      "name": "Type",
       "width": "25%"
     },
     {
@@ -17,13 +17,28 @@
   "rows": [
     {
       "parameter": "`projectName`",
-      "default_value": "`\"\"`",
-      "description": "This is the project name, it will fill in the `<title>` and be displayed in the side bar top if no logo is provided."
+      "type": "String",
+      "description": "This is the project name, it will fill in the `<title>` and be displayed in the side bar top if no logo is provided"
     },
     {
       "parameter": "`projectLogo`",
-      "default_value": "`\"\"`",
-      "description": "This is the project logo, it will is displayed in the side bar top."
+      "type": "String",
+      "description": "This is the project logo, it will is displayed in the side bar top, and should be added as a path to an image file"
+    },
+    {
+      "parameter": "`styleCompilePath`",
+      "type": "String",
+      "description": "Path of the design systems CSS file, expects a list of forward-slash (`/`) separted folder names"
+    },
+    {
+      "parameter": "`styleCompileFile`",
+      "type": "String",
+      "description": "File name and extenstion of the design system CSS file"
+    },
+    {
+      "parameter": "`language`",
+      "type": "String",
+      "description": "Defines the default language for the system in the `<html>` element’s `lang` attribute"
     }
   ]
 }

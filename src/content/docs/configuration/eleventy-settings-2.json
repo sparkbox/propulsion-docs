@@ -1,12 +1,12 @@
 {
-  "tableName": "CSS File Location",
+  "tableName": "Main Eleventy Directories",
   "headings": [
     {
       "name": "Parameter",
       "width": "25%"
     },
     {
-      "name": "Default Value",
+      "name": "Type",
       "width": "25%"
     },
     {
@@ -16,14 +16,29 @@
   ],
   "rows": [
     {
-      "parameter": "`styleCompilePath`",
-      "default_value": "`./dist/css`",
-      "description": "This is the path for where to."
+      "parameter": "`input`",
+      "type": "Directory Path as String",
+      "description": "Primary source directory for tempate files"
     },
     {
-      "parameter": "`styleCompileFile`",
-      "default_value": "`main.css`",
-      "description": "This is the project logo, it will is displayed in the side bar top."
+      "parameter": "`output`",
+      "type": "Directory Path as String",
+      "description": "Primary output directory for compiled HTML files"
+    },
+    {
+      "parameter": "`includes`",
+      "type": "Directory Path as String",
+      "description": "Partials directory relative to the `input` path"
+    },
+    {
+      "parameter": "`layouts`",
+      "type": "Directory Path as String",
+      "description": "Layouts directory relative to the `input` path"
+    },
+    {
+      "parameter": "`data`",
+      "type": "Directory Path as String",
+      "description": "Data directory relative to the `input` path"
     }
   ]
 }

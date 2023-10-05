@@ -3,27 +3,27 @@
   "headings": [
     {
       "name": "Parameter",
-      "width": "25%"
+      "width": "10%"
     },
     {
-      "name": "Default Value",
-      "width": "25%"
+      "name": "Default Type",
+      "width": "15%"
     },
     {
       "name": "Description",
-      "width": "50%"
+      "width": "75%"
     }
   ],
   "rows": [
     {
-      "parameter": "`styleCompilePath`",
-      "default_value": "`./dist/css`",
-      "description": "This is the path for where to."
+      "parameter": "`watch`",
+      "default_type": "Array",
+      "description": "This parameter takes an array of directories from the projects root that the build will watch for changes when running `npm start`"
     },
     {
-      "parameter": "`styleCompileFile`",
-      "default_value": "`main.css`",
-      "description": "This is the project logo, it will is displayed in the side bar top."
+      "parameter": "`copy`",
+      "default_type": "Array of Objects",
+      "description": "The copy parameter takes an array of objects consisting of a key value pair of input and output directories. The input directories are relative to the project root directory, while the output directories are relative to the defined `main.output` directory."
     }
   ]
 }

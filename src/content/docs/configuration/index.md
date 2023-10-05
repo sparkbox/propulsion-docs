@@ -5,54 +5,45 @@ order: 3
 
 Configuration for Propulsion is done in the `propulsion.settings.json` file in the project’s root directory. Here you can setup a variety options to customize your build of Propulsion.
 
-### Project Settings
+### Project Branding
 
-When it comes to customizing your design system, nothing really stands out like a name and a logo. By default the Propulsion logo is displayed. If you
+The primary
 
 {% table "custom-name-logo" page %}
 
-{% highlight json %}
+```json
 {
 	"projectName": "The Awesomeness System",
-	"projectLogo": "./src/assets/awesomeness-logo.svg"
-}
-{% endhighlight %}
-
-### Project Settings
-
-{% table "css-settings" page %}
-
-
-{% highlight json %}
-{
+	"projectLogo": "./src/assets/awesomeness-logo.svg",
 	"styleCompilePath": "./dist/css",
 	"styleCompileFile": "main.css",
-	"previewTemplate": "preview.njk",
 	"language": "en",
 }
-{% endhighlight %}
+```
 
 ### Eleventy Settings
 
-Propulsion abstracts the Eleventy settings in order to have a single configuration file. If you do need to modify the Eleventy settings beyond what is possible here, review the [Advanced Configuration](advanced) instruction.
+These settings are passed on verbatium to Eleventy, and values should follow Eleventy’s [supported languages](https://www.11ty.dev/docs/languages/) shorthand. If you do need to modify the Eleventy settings beyond what is possible here, review the [Advanced Configuration](advanced) instructions.
 
 #### Defaults
 
 {% table "eleventy-settings-1" page %}
 
-{% highlight json %}
+```json
 {
 	"defaultTemplateEngine": "njk",
 	"defaultMarkdownEngine": "njk",
 	"templateFormats": ["njk", "md"],
 }
-{% endhighlight %}
+```
 
-#### Directories
+#### Main Eleventy Directories
+
+The `directories` section has three parts, the first is `main`. These parameters are all directories that are passed directly to Eleventy to compile the HTML. To learn more about how this functions, see [Eleventy Configuration Options](https://www.11ty.dev/docs/config/#configuration-options)
 
 {% table "eleventy-settings-2" page %}
 
-{% highlight json %}
+```json
 {
 	...
 	"directories": {
@@ -66,13 +57,15 @@ Propulsion abstracts the Eleventy settings in order to have a single configurati
 	},
 	...
 }
-{% endhighlight %}
+```
 
-#### Watch and Copy
+#### Watch and Copy Directories
+
+The second and third parts of the `directories` section is for setting up directories to watch during development builds and to copy files during the build.
 
 {% table "eleventy-settings-3" page %}
 
-{% highlight json %}
+```json
 {
 	...
 	"directories": {
@@ -91,14 +84,20 @@ Propulsion abstracts the Eleventy settings in order to have a single configurati
 	},
 	...
 }
-{% endhighlight %}
+```
 
 
 ### Custom Styling
 
+Custom styling is a feature unique to Propulsion that allows you to customize the user interface and code block styles.
+
 #### User Interface Styles
 
-{% highlight json %}
+The user interface styles for Propulsion, including vertical and horizontal toolbars and documentation styles.
+
+{% table "interface-styles" page %}
+
+```json
 {
 	"styles": {
 		"fontFamily": "system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'",
@@ -116,12 +115,19 @@ Propulsion abstracts the Eleventy settings in order to have a single configurati
 		"uiNavBackgroundActiveColor": "hsl(213deg 100% 48%)"
 	}
 }
-{% endhighlight %}
+```
 
 #### Code Syntax Highlighting Styles
 
-{% highlight json %}
+The syntax highlighting of code blocks is used in the component code view as well as in code blocks within any documentation. These parameters define the font, background color, and various text colors of the code block. Syntax highlighting is performed by [the official Eleventy plugin](https://www.11ty.dev/docs/plugins/syntaxhighlight/) which is based on the [Prism.js project](https://prismjs.com).
+
+{% table "code-styles" page %}
+
+Example of the `codeStyles` parameters:
+
+```json
 {
+	...
 	"codeStyles": {
 		"codeFont": "Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace",
 		"codeDefaultBackground": "hsl(217deg 13% 99%)",
@@ -138,4 +144,4 @@ Propulsion abstracts the Eleventy settings in order to have a single configurati
 		"codeInsertedColor": "hsl(29deg 54% 61%)"
 	}
 }
-{% endhighlight %}
+```
