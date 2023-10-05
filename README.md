@@ -1,5 +1,7 @@
 # Propulsion Documentation Site
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a00db356-646d-4a6e-9dc5-f9901f700875/deploy-status)](https://app.netlify.com/sites/propulsion-docs/deploys)
+
 This repository is for the Propulsion Design System Tool documentation site.
 
 For the Propulsion repository, see [sparkbox/propulsion](https://github.com/sparkbox/propulsion).
