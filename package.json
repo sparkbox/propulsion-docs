@@ -8,7 +8,8 @@
     "markup:watch": "npm run markup -- --watch --serve",
     "sass": "sass src/styles/main.scss:dist/main.css",
     "sass:watch": "npm run sass -- --watch",
-    "start": "npm run markup:watch & npm run sass:watch"
+    "start": "npm run markup:watch & npm run sass:watch",
+    "build": "npm run markup && npm run sass"
   },
   "keywords": [],
   "author": "Sparkbox",
