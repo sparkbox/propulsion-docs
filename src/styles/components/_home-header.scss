@@ -7,6 +7,11 @@
 		padding-block: var(--size-relative-12);
 		color: var(--gray-0);
 
+		&:hover {
+			color: var(--blue-1);
+			transition: color 250ms var(--ease-in-out-4);
+		}
+
 		.cmp-logo {
 			overflow: visible;
 		}
