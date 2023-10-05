@@ -1,0 +1,24 @@
+.cmp-home-header {
+	background: var(--sky-gradient);
+	box-shadow: var(--header-shadow);
+
+	&__link {
+		display: block;
+		padding-block: var(--size-relative-12);
+		color: var(--gray-0);
+
+		.cmp-logo {
+			overflow: visible;
+		}
+
+		.cmp-logo__rocket {
+			transition-property: translate;
+			transition-duration: 250ms;
+			transition-timing-function: var(--ease-elastic-in-out-3);
+		}
+
+		&:hover .cmp-logo__rocket {
+			translate: 1rem -1rem;
+		}
+	}
+}

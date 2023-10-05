@@ -1,6 +1,11 @@
 .obj-page-width {
 	width: min(100% - 2rem, 80rem);
-	margin: 0 auto
+	margin: 0 auto;
+}
+
+.obj-narrow-width {
+	width: min(100% - 2rem, 60rem);
+	margin: 0 auto;
 }
 
 .obj-page {
@@ -8,5 +13,5 @@
 	grid-template-columns: var(--size-fluid-9) minmax(var(--size-fluid-9), 100%);
 	gap: var(--size-fluid-4);
 	width: min(100% - 2rem, 80rem);
-	margin: 0 auto
+	margin: 0 auto;
 }

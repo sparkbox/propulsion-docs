@@ -8,6 +8,7 @@
 @forward 'generics/responsive';
 
 // 4. Elements
+@forward 'elements/root';
 @forward 'elements/body';
 @forward 'elements/text-blocks';
 @forward 'elements/text-inlines';
@@ -17,6 +18,8 @@
 @forward 'objects/page';
 
 // 6. Components
+@forward 'components/home-header';
+@forward 'components/home-docs-link';
 @forward 'components/site-header';
 @forward 'components/site-footer';
 @forward 'components/nav';
