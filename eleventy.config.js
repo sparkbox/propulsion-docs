@@ -22,6 +22,13 @@ module.exports = function(eleventyConfig) {
 		}
 	});
 
+	eleventyConfig.addShortcode("directory", function(file, page) {
+		const dataDir = [...page.inputPath.split('/')];
+		dataDir.pop();
+		const jsonFile = fs.readFileSync(`${dataDir.join('/')}/${file}.json`, 'utf8');
+		const data = JSON.parse(jsonFile);
+	});
+
 	eleventyConfig.addShortcode("table", function(file, page) {
 		const md = new markdownIt();
 		const dataDir = [...page.inputPath.split('/')];

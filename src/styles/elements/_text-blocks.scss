@@ -52,7 +52,20 @@ h4:not([class]) {
 	}
 }
 
-p:not([class]) {
+p:not([class]),
+li:not([class]),
+dt:not([class]),
+dd:not([class]) {
 	font-size: clamp(var(--font-size-1), 2vw, var(--font-size-3));
 	max-width: var(--size-content-3);
+}
+
+dd:not([class]) + dt:not([class]) {
+	margin-block-start: var(--size-5);
+}
+
+dt:not([class]) code:not([class]) {
+	border: unset;
+	padding: unset;
+	background: unset;
 }
