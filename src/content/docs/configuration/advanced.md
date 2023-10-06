@@ -57,39 +57,58 @@ The remainder of the Eleventy-specific files can be found in the [tasks director
 
 #### Tools
 
+The [tools directory]({{ repo_url }}/config/tasks/tools) contains all the JavaScript related to generating the Propulsion markup. Unlike a standard Eleventy layout template, the Propulsion template is build via a short code, allowing it to be built independent of any specific templating language. The following files handle different aspects of the layout build.
+
 <dl>
-	<dt><a href="{{ repo_url }}/config/tasks/tools/logo.svg"><code>logo.svg</code></a></dt>
-	<dd>
-		The propulsion logo
-	</dd>
 	<dt><a href="{{ repo_url }}/config/tasks/tools/page.js"><code>page.js</code></a></dt>
 	<dd></dd>
+	<dt><a href="{{ repo_url }}/config/tasks/tools/ui.button.js"><code>ui.button.js</code></a></dt>
+	<dd>
+		Component for buttons withing the Propulsion UI
+	</dd>
+	<dt><a href="{{ repo_url }}/config/tasks/tools/ui.content.js"><code>ui.content.js</code></a></dt>
+	<dd>
+		Generates the component and documentation views and blocks, including the codeblock and iframe views.
+	</dd>
+	<dt><a href="{{ repo_url }}/config/tasks/tools/ui.head.js"><code>ui.head.js</code></a></dt>
+	<dd>
+		Renders the `<head>` tag used on Propulsion-generated pages.
+	</dd>
+	<dt><a href="{{ repo_url }}/config/tasks/tools/ui.header.js"><code>ui.header.js</code></a></dt>
+	<dd>
+		Component to generate the top toolbar of the component view.
+	</dd>
+	<dt><a href="{{ repo_url }}/config/tasks/tools/ui.nav.js"><code>ui.nav.js</code></a></dt>
+	<dd>
+		Generates the side navigation toolbar, which reads the outputs the file listing of the `docs` directory.
+	</dd>
+	<dt><a href="{{ repo_url }}/config/tasks/tools/ui.styles.js"><code>ui.styles.js</code></a></dt>
+	<dd>
+		Renders the custom styles defined in the `propulsion.settings.json` file from the [User Interface](/docs/configuration/#user-interface-styles) and [Code Syntax Highlighting](/docs/configuration/#code-syntax-highlighting-styles) Styles.
+	</dd>
+	<dt><a href="{{ repo_url }}/config/tasks/tools/ui.svg.js"><code>ui.svg.js</code></a></dt>
+	<dd>
+		Component that loads in the defined icon from the <code>sprite-sheet.svg</code> file.
+	</dd>
+	<dt><a href="{{ repo_url }}/config/tasks/tools/logo.svg"><code>logo.svg</code></a></dt>
+	<dd>
+		The Propulsion logo as displayed in the side toolbar.
+	</dd>
 	<dt><a href="{{ repo_url }}/config/tasks/tools/sprite-sheet.svg"><code>sprite-sheet.svg</code></a></dt>
 	<dd>
 		This sprite sheet contains all the user interface icons for Propulsion. The full SVG code is embedded on each page in Propulsion, and then called using the <code style="white-space:nowrap">&lt;use /&gt;</code> SVG element.
 	</dd>
-	<dt><a href="{{ repo_url }}/config/tasks/tools/ui.button.js"><code>ui.button.js</code></a></dt>
-	<dd></dd>
-	<dt><a href="{{ repo_url }}/config/tasks/tools/ui.content.js"><code>ui.content.js</code></a></dt>
-	<dd></dd>
-	<dt><a href="{{ repo_url }}/config/tasks/tools/ui.head.js"><code>ui.head.js</code></a></dt>
-	<dd></dd>
-	<dt><a href="{{ repo_url }}/config/tasks/tools/ui.header.js"><code>ui.header.js</code></a></dt>
-	<dd></dd>
-	<dt><a href="{{ repo_url }}/config/tasks/tools/ui.nav.js"><code>ui.nav.js</code></a></dt>
-	<dd></dd>
-	<dt><a href="{{ repo_url }}/config/tasks/tools/ui.styles.js"><code>ui.styles.js</code></a></dt>
-	<dd></dd>
-	<dt><a href="{{ repo_url }}/config/tasks/tools/ui.svg.js"><code>ui.svg.js</code></a></dt>
-	<dd></dd>
 </dl>
 
 
 ### Scripts
 
-Propulsion’s JavaScript is written in TypeScript and compiled during build.
+Propulsion’s JavaScript is written in TypeScript, found in the [scripts directory]({{ repo_url }}/config/scripts), and compiled during build. The @types directory stores any custom-defined TypeScript types.
 
 ### Styles
 
-Propulsion’s CSS is written in Sass and compiled during build.
+Propulsion’s CSS is written in Sass, found in the [styles directory]({{ repo_url }}/config/styles), and compiled during build. The Propulsion Sass files follow the BEM naming convention with an Inverted Triangle architecture. Class names contain a prefix name spacing beginning with `pr` for Propulsion followed by the appropriate inverted triangle section:
 
+  - `probj` for Object
+  - `prcmp-` for Component
+  - `prutil-` for Utility

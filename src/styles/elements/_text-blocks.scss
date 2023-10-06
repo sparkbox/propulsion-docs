@@ -60,6 +60,10 @@ dd:not([class]) {
 	max-width: var(--size-content-3);
 }
 
+dt:not([class]) {
+	font-weight: var(--font-weight-7);
+}
+
 dd:not([class]) + dt:not([class]) {
 	margin-block-start: var(--size-5);
 }
@@ -68,4 +72,8 @@ dt:not([class]) code:not([class]) {
 	border: unset;
 	padding: unset;
 	background: unset;
+}
+
+li:not([class]) + li:not([class]) {
+	margin-block-start: var(--size-2);
 }
