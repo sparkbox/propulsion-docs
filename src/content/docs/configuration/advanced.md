@@ -61,7 +61,9 @@ The [tools directory]({{ repo_url }}/config/tasks/tools) contains all the JavaSc
 
 <dl>
 	<dt><a href="{{ repo_url }}/config/tasks/tools/page.js"><code>page.js</code></a></dt>
-	<dd></dd>
+	<dd>
+		Combines all the partials to generate the full Propulsion template.
+	</dd>
 	<dt><a href="{{ repo_url }}/config/tasks/tools/ui.button.js"><code>ui.button.js</code></a></dt>
 	<dd>
 		Component for buttons withing the Propulsion UI

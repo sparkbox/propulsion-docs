@@ -1,12 +1,17 @@
 a[href]:not([class]) {
 	color: var(--blue-7);
+	text-decoration-thickness: 1px;
+	text-underline-offset: 1px;
+	transition: text-underline-offset 150ms var(--ease-elastic-in-out-3);
 
 	@media (prefers-color-scheme: dark) {
 		color: var(--blue-5);
 	}
 
-	&:hover {
-		text-decoration: none;
+	&:hover,
+	&:visited:hover {
+		text-decoration-color: var(--body-text-color);
+		text-underline-offset: 0.25em;
 	}
 
 	&:visited {
