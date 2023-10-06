@@ -1,7 +1,9 @@
 .cmp-site-header {
 	padding-block: var(--size-6);
 	margin-block-end: var(--size-8);
-	background: var(--sky-gradient);
+	background-image: var(--sky-gradient);
+	background-size: auto auto, 125% 200%;
+	background-position: 0% 0%, 50% 100%;
 	color: var(--gray-0);
 	box-shadow: var(--header-shadow);
 

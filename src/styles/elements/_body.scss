@@ -1,14 +1,6 @@
 body {
-	--body-text-color: var(--gray-9);
-	--body-background-color: var(--gray-1);
-
 	margin: 0;
 	font: 100% / var(--font-lineheight-3) var(--font-sans);
 	color: var(--body-text-color);
 	background-color: var(--body-background-color);
-
-	@media (prefers-color-scheme: dark) {
-		--body-text-color: var(--gray-1);
-		--body-background-color: var(--gray-10);
-	}
 }

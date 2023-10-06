@@ -1,26 +1,109 @@
 .cmp-logo {
 	&__fins {
-		fill: var(--blue-8);
-		stroke: var(--blue-12);
+		// fill: var(--pink-6);
+		fill: url(#fin_shading);
+		stroke-width: 0;
+		stroke: var(--pink-9);
+		shape-rendering: crispEdges;
+		stroke-width: 1px;
+		stroke: var(--pink-10);
+		vector-effect: non-scaling-stroke;
 	}
+
+	&__fin-shading {
+		&--stop1 {
+			stop-color: var(--pink-11);
+		}
+		&--stop2 {
+			stop-color: var(--pink-5);
+		}
+	}
+
 	&__body {
-		fill: var(--gray-5);
-		stroke: var(--gray-8);
-	}
-	&__thruster {
-		fill: var(--gray-6);
-		stroke: var(--gray-8);
-	}
-	&__window {
-		fill: var(--gray-1);
+		fill: url(#body_shading);
+		stroke-width: 1px;
 		stroke: var(--gray-7);
+		vector-effect: non-scaling-stroke;
 	}
+
+	&__body-shading {
+		&--stop1 {
+			stop-color: var(--gray-3);
+		}
+		&--stop2 {
+			stop-color: var(--gray-6);
+		}
+	}
+
+	&__thruster {
+		fill: url(#thruster_shading);
+		stroke-width: 1px;
+		stroke: color-mix(in hsl, var(--gray-8) 90%, var(--blue-5));
+		vector-effect: non-scaling-stroke;
+	}
+
+	&__thruster-shading {
+		&--stop1 {
+			stop-color: color-mix(in hsl, var(--gray-9) 90%, var(--blue-5));
+		}
+		&--stop2 {
+			stop-color: color-mix(in hsl, var(--gray-6) 90%, var(--blue-5));
+		}
+	}
+
+	&__window {
+		fill: url(#window_shading);
+		stroke-width: 1px;
+		stroke: var(--blue-8);
+		vector-effect: non-scaling-stroke;
+	}
+
+	&__window-shading {
+		&--stop1 {
+			stop-color: var(--blue-0);
+		}
+		&--stop2 {
+			stop-color: var(--blue-2);
+		}
+		&--stop3 {
+			stop-color: var(--blue-3);
+		}
+		&--stop4 {
+			stop-color: var(--blue-4);
+		}
+		&--stop5 {
+			stop-color: var(--blue-5);
+		}
+	}
+
+
 	&__flame-outer {
-		fill: var(--orange-8);
+		fill: url(#flame_outer_shading);
 	}
+
+	&__flame-outer-shading {
+		&--stop1 {
+			stop-color: var(--orange-5);
+		}
+		&--stop2 {
+			stop-color: var(--red-7);
+		}
+	}
+
+
 	&__flame-inner {
-		fill: var(--yellow-5);
+		fill: url(#flame_inner_shading);
 	}
+
+	&__flame-inner-shading {
+		&--stop1 {
+			stop-color: var(--yellow-5);
+		}
+		&--stop2 {
+			stop-color: var(--orange-5);
+		}
+	}
+
 	&__text {
 		fill: currentColor;
 	}

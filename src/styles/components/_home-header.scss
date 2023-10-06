@@ -1,8 +1,16 @@
 .cmp-home-header {
 	background: var(--sky-gradient);
-	box-shadow: var(--header-shadow);
+	background-size: auto auto, 125% 200%;
+	background-position: 0% 0%, 50% 100%;
+	pointer-events: none;
+	transition: background-position 1000ms var(--ease-in-out-4);
+
+	&:hover {
+		background-position: 0% 0%, 50% 0%;
+	}
 
 	&__link {
+		pointer-events: auto;
 		display: block;
 		padding-block: var(--size-relative-12);
 		color: var(--gray-0);
