@@ -1,6 +1,6 @@
 ---
 title: Configuration
-order: 4
+order: 5
 ---
 
 Configuration for Propulsion is done in the `propulsion.settings.json` file in the project’s root directory. Here you can setup a variety options to customize your build of Propulsion.
@@ -23,7 +23,7 @@ The primary
 
 ### Eleventy Settings
 
-These settings are passed on verbatium to Eleventy, and values should follow Eleventy’s [supported languages](https://www.11ty.dev/docs/languages/) shorthand. If you do need to modify the Eleventy settings beyond what is possible here, review the [Advanced Configuration](advanced) instructions.
+These settings are passed on verbatium to Eleventy, and values should follow Eleventy’s [supported languages](https://www.11ty.dev/docs/languages/) shorthand. If you do need to modify the Eleventy settings beyond what is possible here, review the [Advanced Configuration](/advanced-configuration) instructions.
 
 #### Defaults
 

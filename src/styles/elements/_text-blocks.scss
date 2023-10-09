@@ -46,6 +46,17 @@ h4:not([class]) {
 	}
 }
 
+h5:not([class]) {
+	font-size: var(--font-size-4);
+	font-weight: var(--font-weight-7);
+	color: var(--orange-9);
+	margin-block: var(--size-relative-4);
+
+	@media (prefers-color-scheme: dark) {
+		color: var(--orange-6);
+	}
+}
+
 :is(p, li, dt, dd):not([class]) {
 	font-size: clamp(var(--font-size-1), 2vw, var(--font-size-3));
 	max-width: var(--size-content-3);

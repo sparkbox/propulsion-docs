@@ -2,6 +2,7 @@
 	color: inherit;
 	text-decoration: unset;
 	position: relative;
+	cursor: auto;
 
 	&:focus {
 		outline: none;
@@ -30,7 +31,6 @@
 	&:focus::before,
 	&:hover::before {
 		translate: 0 0;
-		pointer-events: all;
 		opacity: 1;
 	}
 }

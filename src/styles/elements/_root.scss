@@ -10,10 +10,13 @@
 			transparent 10%
 		),
 		radial-gradient(
-			600% 150% at 50% 100%,
-			var(--blue-6) 0%,
-			var(--blue-6) 5%,
-			var(--blue-9) 8%,
+			600% 200% at 50% 100%,
+			var(--cyan-1) 0%,
+			var(--cyan-1) 2%,
+			var(--cyan-4) 4%,
+			var(--blue-6) 8%,
+			var(--blue-9) 20%,
+			var(--blue-12) 30%,
 			color-mix(in hsl, var(--gray-12) 55%, var(--purple-12)) 50%,
 			color-mix(in hsl, var(--gray-12) 55%, var(--purple-12)) 70%,
 			var(--gray-12) 100%

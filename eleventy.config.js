@@ -127,7 +127,7 @@ module.exports = function(eleventyConfig) {
 	}).use(markdownItAnchor, {
 		tabIndex: false,
 		uniqueSlugStartIndex: 1,
-		level: [2, 3, 4],
+		level: [2, 3, 4, 5, 6],
 		permalink: markdownItAnchor.permalink.headerLink({
 			class:"cmp-page-link",
 			safariReaderFix: true

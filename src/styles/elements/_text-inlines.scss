@@ -10,6 +10,7 @@ a[href]:not([class]) {
 
 	&:hover,
 	&:visited:hover {
+		cursor: pointer;
 		text-decoration-color: var(--body-text-color);
 		text-underline-offset: 0.25em;
 	}
@@ -34,4 +35,11 @@ a[href]:not([class]) {
 		background-color: var(--gray-8);
 		border-color: var(--gray-6);
 	}
+}
+
+:is(img):not([class]) {
+	display: block;
+	border-radius: var(--radius-2);
+	margin-block: var(--size-6);
+	box-shadow: var(--shadow-3), var(--shadow-6);
 }
