@@ -10,8 +10,30 @@
 
 .obj-page {
 	display: grid;
-	grid-template-columns: var(--size-fluid-9) minmax(var(--size-fluid-9), 100%);
-	gap: var(--size-fluid-4);
+	gap: var(--size-4);
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: "main main"
+	                     "side side"
+	                     "foot foot";
 	width: min(100% - 2rem, 80rem);
 	margin: 0 auto;
+
+	@media (min-width: 50rem) {
+		grid-template-columns: var(--size-fluid-9) minmax(var(--size-fluid-9), 100%);
+		gap: var(--size-fluid-4);
+		grid-template-areas: "side main"
+		                     "foot foot";
+	}
+
+	&__side {
+		grid-area: side;
+	}
+
+	&__main {
+		grid-area: main;
+	}
+
+	&__foot {
+		grid-area: foot;
+	}
 }

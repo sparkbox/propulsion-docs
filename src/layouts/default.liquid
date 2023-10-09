@@ -16,16 +16,16 @@
 			</div>
 		</header>
 		<div class="obj-page">
-			<div class="util-position-relative">
+			<div class="obj-page__side util-position-relative">
 				{% include 'nav' %}
 			</div>
-			<main>
+			<main class="obj-page__main">
 				<header>
 					<h2>{{ title }}</h2>
 				</header>
 				{{ content }}
 			</main>
-			<footer class="cmp-footer">
+			<footer class="obj-page__foot cmp-footer">
 				<div class="obj-page-width">
 					<div class="cmp-footer__container">
 						<a href="{{ pkg.repository.url }}/blob/main/{{ page.inputPath | replace: './', '' }}">Edit this Page</a>
