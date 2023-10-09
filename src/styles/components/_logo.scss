@@ -1,6 +1,5 @@
 .cmp-logo {
 	&__fins {
-		// fill: var(--pink-6);
 		fill: url(#fin_shading);
 		stroke-width: 0;
 		stroke: var(--pink-9);
@@ -8,6 +7,10 @@
 		stroke-width: 1px;
 		stroke: var(--pink-10);
 		vector-effect: non-scaling-stroke;
+
+		.cmp-home-header & {
+			stroke-width: 2px;
+		}
 	}
 
 	&__fin-shading {
@@ -15,7 +18,16 @@
 			stop-color: var(--pink-11);
 		}
 		&--stop2 {
-			stop-color: var(--pink-5);
+			stop-color: var(--pink-8);
+		}
+		&--stop3 {
+			stop-color: var(--pink-6);
+		}
+		&--stop4 {
+			stop-color: var(--pink-7);
+		}
+		&--stop5 {
+			stop-color: var(--pink-9);
 		}
 	}
 
@@ -24,6 +36,10 @@
 		stroke-width: 1px;
 		stroke: var(--gray-7);
 		vector-effect: non-scaling-stroke;
+
+		.cmp-home-header & {
+			stroke-width: 2px;
+		}
 	}
 
 	&__body-shading {
@@ -31,6 +47,29 @@
 			stop-color: var(--gray-3);
 		}
 		&--stop2 {
+			stop-color:
+				color-mix(in hsl,
+					var(--gray-3) 35%,
+					var(--gray-5)
+				);
+		}
+		&--stop3 {
+			stop-color: var(--gray-3);
+		}
+		&--stop4 {
+			stop-color: var(--gray-5);
+		}
+		&--stop5 {
+			stop-color:
+				color-mix(in hsl,
+					var(--gray-4) 35%,
+					var(--gray-6)
+				);
+		}
+		&--stop6 {
+			stop-color: var(--gray-6);
+		}
+		&--stop7 {
 			stop-color: var(--gray-6);
 		}
 	}
@@ -40,14 +79,19 @@
 		stroke-width: 1px;
 		stroke: color-mix(in hsl, var(--gray-8) 90%, var(--blue-5));
 		vector-effect: non-scaling-stroke;
+
+		.cmp-home-header & {
+			stroke-width: 2px;
+		}
 	}
 
 	&__thruster-shading {
 		&--stop1 {
-			stop-color: color-mix(in hsl, var(--gray-9) 90%, var(--blue-5));
+			stop-color: color-mix(in hsl, var(--gray-6) 90%, var(--blue-5));
+
 		}
 		&--stop2 {
-			stop-color: color-mix(in hsl, var(--gray-6) 90%, var(--blue-5));
+			stop-color: color-mix(in hsl, var(--gray-10) 90%, var(--blue-5));
 		}
 	}
 
@@ -56,6 +100,10 @@
 		stroke-width: 1px;
 		stroke: var(--blue-8);
 		vector-effect: non-scaling-stroke;
+
+		.cmp-home-header & {
+			stroke-width: 2px;
+		}
 	}
 
 	&__window-shading {
@@ -78,7 +126,13 @@
 
 
 	&__flame-outer {
-		fill: url(#flame_outer_shading);
+		fill: url(#flame_outer_shading);stroke-width: 1px;
+		stroke: var(--red-9);
+		vector-effect: non-scaling-stroke;
+
+		.cmp-home-header & {
+			stroke-width: 2px;
+		}
 	}
 
 	&__flame-outer-shading {
@@ -93,6 +147,13 @@
 
 	&__flame-inner {
 		fill: url(#flame_inner_shading);
+		stroke-width: 1px;
+		stroke: var(--orange-3);
+		vector-effect: non-scaling-stroke;
+
+		.cmp-home-header & {
+			stroke-width: 2px;
+		}
 	}
 
 	&__flame-inner-shading {
