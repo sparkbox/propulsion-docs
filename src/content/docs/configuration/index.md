@@ -1,6 +1,6 @@
 ---
 title: Configuration
-order: 3
+order: 4
 ---
 
 Configuration for Propulsion is done in the `propulsion.settings.json` file in the project’s root directory. Here you can setup a variety options to customize your build of Propulsion.

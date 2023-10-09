@@ -10,6 +10,8 @@ const yaml = require("js-yaml");
 module.exports = function(eleventyConfig) {
 	const inputDir = 'src/content';
 
+	eleventyConfig.addPassthroughCopy({'src/assets' : '/'});
+
 	eleventyConfig.addLayoutAlias('default', 'default.liquid');
 	eleventyConfig.addLayoutAlias('home', 'home.liquid');
 	eleventyConfig.addLayoutAlias('raw', 'raw.liquid');
