@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a00db356-646d-4a6e-9dc5-f9901f700875/deploy-status)](https://app.netlify.com/sites/propulsion-docs/deploys)
 
-This repository is for the Propulsion Design System Tool documentation site.
+This repository is the documentation site for Propulsion Design System Builder.
 
 For the Propulsion repository, see [sparkbox/propulsion](https://github.com/sparkbox/propulsion).
 
@@ -11,7 +11,7 @@ For the Propulsion repository, see [sparkbox/propulsion](https://github.com/spar
 This docs site is built using [Eleventy](https://11ty.dev) and requires [Node.js](https://nodejs.dev).
 
 1. Fork repo and pull to local
-2. From a command prompt open the repo directory
+2. From a command prompt, open the repo directory
 3. Run `npm install` to install all Node-related dependencies
 4. Run `npm start` to run the build and server at [localhost:8080](http://localhost:8080).
 
@@ -19,4 +19,4 @@ This docs site is built using [Eleventy](https://11ty.dev) and requires [Node.js
 
 The Propulsion docs site is an open-source project and welcomes updates and edits as needed. All pull requests will be reviewed, accepted, and rejected by members of [Sparkbox](https://github.com/sparkbox)’s team.
 
-Please review the issues list, or submit an issue if you find an error on the site, before contributing to the project.
+Please review the [issues list](https://github.com/sparkbox/propulsion/issues), or submit an issue if you find an error on the site, before contributing to the project.
