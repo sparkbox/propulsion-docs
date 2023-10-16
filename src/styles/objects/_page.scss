@@ -6,6 +6,7 @@
 .obj-narrow-width {
 	width: min(100% - 2rem, 60rem);
 	margin: 0 auto;
+	margin-block: var(--size-relative-12);
 }
 
 .obj-page {
