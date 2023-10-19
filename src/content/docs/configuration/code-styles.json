@@ -1,5 +1,5 @@
 {
-  "tableName": "User Interface Styles",
+  "tableName": "Code Styles",
   "headings": [
     {
       "name": "Parameter",
@@ -18,27 +18,27 @@
     {
       "parameter": "`codeFont`",
       "type": "Font Stack List",
-      "description": "Defines the font stack used for code blocks"
+      "description": "Defines fonts used for code blocks"
     },
     {
       "parameter": "`codeDefaultBackground`",
       "type": "Color: `hsl()`, HEX, etc.",
-      "description": "Sets the background color for the code block"
+      "description": "Defines the background color for the code block"
     },
     {
       "parameter": "`codeDefaultColor`",
       "type": "Color: `hsl()`, HEX, etc.",
-      "description": "Defines the default color"
+      "description": "Defines the color of any text between HTML tags"
     },
     {
       "parameter": "`codeCommentColor`",
       "type": "Color: `hsl()`, HEX, etc.",
-      "description": "Defines the color for comments"
+      "description": "Defines the color for code comments"
     },
     {
       "parameter": "`codePunctuationColor`",
       "type": "Color: `hsl()`, HEX, etc.",
-      "description": "Defines the color punctuation"
+      "description": "Defines the color of punctuation marks like angle brackets and quotes"
     },
     {
       "parameter": "`codeTagColor`",
@@ -48,7 +48,7 @@
     {
       "parameter": "`codeNameColor`",
       "type": "Color: `hsl()`, HEX, etc.",
-      "description": "Defines the color for the name of function declaration"
+      "description": "Defines the color for the name of function declarations"
     },
     {
       "parameter": "`codeNumberColor`",
@@ -63,12 +63,12 @@
     {
       "parameter": "`codeRuleColor`",
       "type": "Color: `hsl()`, HEX, etc.",
-      "description": "Defines the color for at-rules, important, keywords, and selectors."
+      "description": "Defines the color for at-rules, important, keywords, and selectors"
     },
     {
       "parameter": "`codeValueColor`",
       "type": "Color: `hsl()`, HEX, etc.",
-      "description": "Defilnes the color for attribute values, char, regex, strings, and variables"
+      "description": "Defines the color for attribute values, regex, strings, and variables"
     },
     {
       "parameter": "`codeOperatorColor`",
@@ -78,7 +78,7 @@
     {
       "parameter": "`codeInsertedColor`",
       "type": "Color: `hsl()`, HEX, etc.",
-      "description": "Defines the color for inserted blocks"
+      "description": "Defines the color for inserted code blocks"
     }
   ]
 }

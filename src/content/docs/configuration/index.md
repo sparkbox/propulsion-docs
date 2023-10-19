@@ -1,13 +1,13 @@
 ---
 title: Configuration
-order: 5
+order: 6
 ---
 
-Configuration for Propulsion is done in the `propulsion.settings.json` file in the project’s root directory. Here you can setup a variety options to customize your build of Propulsion.
+Configuration for Propulsion is done in the `propulsion.settings.json` file in the project’s root directory. Here, you can setup a variety of options to customize your build of Propulsion.
 
 ### Project Branding
 
-The primary
+The primary place for setting up your build of Propulsion to reflect your project's design system, instead of the Propulsion fallbacks. There are several specific keys that you can fill in to suit your system's needs.
 
 {% table "custom-name-logo" page %}
 
@@ -15,31 +15,50 @@ The primary
 {
 	"projectName": "The Awesomeness System",
 	"projectLogo": "./src/assets/awesomeness-logo.svg",
+	"language": "en",
+}
+```
+
+#### CSS Settings
+
+This section defines several input and output paths for your design system's styles. Remember that you can modify the build to use PostCSS, LESS, or vanilla CSS, but in this example, we're using SCSS.
+
+{% table "css-settings" page %}
+
+```json
+{
+	...
+	"styleSourcePath": "./src/styles",
+	"styleSourceFile": "main.scss",
 	"styleCompilePath": "./dist/css",
 	"styleCompileFile": "main.css",
-	"language": "en",
+	...
 }
 ```
 
 ### Eleventy Settings
 
-These settings are passed on verbatium to Eleventy, and values should follow Eleventy’s [supported languages](https://www.11ty.dev/docs/languages/) shorthand. If you do need to modify the Eleventy settings beyond what is possible here, review the [Advanced Configuration](/advanced-configuration) instructions.
+These settings are passed on verbatim to Eleventy, and values should follow Eleventy’s [supported languages](https://www.11ty.dev/docs/languages/) shorthand. If you need to modify the Eleventy settings beyond what is possible here, review the [Advanced Configuration](../advanced-configuration) instructions.
 
 #### Defaults
+
+The default Eleventy Settings that download with Propulsion, defining template preferences.
 
 {% table "eleventy-settings-1" page %}
 
 ```json
 {
+	...
 	"defaultTemplateEngine": "njk",
 	"defaultMarkdownEngine": "njk",
 	"templateFormats": ["njk", "md"],
+	...
 }
 ```
 
 #### Main Eleventy Directories
 
-The `directories` section has three parts, the first is `main`. These parameters are all directories that are passed directly to Eleventy to compile the HTML. To learn more about how this functions, see [Eleventy Configuration Options](https://www.11ty.dev/docs/config/#configuration-options)
+The `directories` section has three parts, the first of which is `main`. These parameters are all directories that are passed directly to Eleventy in order to compile the HTML. To learn more about how this functions, see [Eleventy Configuration Options](https://www.11ty.dev/docs/config/#configuration-options).
 
 {% table "eleventy-settings-2" page %}
 
@@ -61,7 +80,7 @@ The `directories` section has three parts, the first is `main`. These parameters
 
 #### Watch and Copy Directories
 
-The second and third parts of the `directories` section is for setting up directories to watch during development builds and to copy files during the build.
+The second and third parts of the `directories` section is for setting up directories to watch during development builds and to copy files during builds.
 
 {% table "eleventy-settings-3" page %}
 
@@ -86,7 +105,6 @@ The second and third parts of the `directories` section is for setting up direct
 }
 ```
 
-
 ### Custom Styling
 
 Custom styling is a feature unique to Propulsion that allows you to customize the user interface and code block styles.
@@ -99,6 +117,7 @@ The user interface styles for Propulsion, including vertical and horizontal tool
 
 ```json
 {
+	...
 	"styles": {
 		"fontFamily": "system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji'",
 		"uiBackgroundColor": "hsl(213deg 6% 93%)",
@@ -113,17 +132,18 @@ The user interface styles for Propulsion, including vertical and horizontal tool
 		"uiNavBackgroundHoverColor": "hsl(213deg 6% 89%)",
 		"uiNavTextActiveColor": "hsl(213deg 6% 100%)",
 		"uiNavBackgroundActiveColor": "hsl(213deg 100% 48%)"
-	}
+	},
+	...
 }
 ```
 
 #### Code Syntax Highlighting Styles
 
-The syntax highlighting of code blocks is used in the component code view as well as in code blocks within any documentation. These parameters define the font, background color, and various text colors of the code block. Syntax highlighting is performed by [the official Eleventy plugin](https://www.11ty.dev/docs/plugins/syntaxhighlight/) which is based on the [Prism.js project](https://prismjs.com).
+The syntax highlighting of code blocks is used in the component code panel, as well as in code blocks within any documentation. These parameters define the font, background color, and various text colors of the code block. Syntax highlighting is performed by [the official Eleventy plugin](https://www.11ty.dev/docs/plugins/syntaxhighlight/), which is based on the [Prism.js project](https://prismjs.com).
 
 {% table "code-styles" page %}
 
-Example of the `codeStyles` parameters:
+<!-- // TODO: is `codeTagColor` supposed to be effecting the html tag AND any attributes? (like `class`, `href`, `aria-hidden`) It's working as described, just want to be sure that's what we want -->
 
 ```json
 {

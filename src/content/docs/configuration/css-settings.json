@@ -1,5 +1,5 @@
 {
-  "tableName": "CSS File Location",
+  "tableName": "CSS File Locations",
   "headings": [
     {
       "name": "Parameter",
@@ -16,19 +16,24 @@
   ],
   "rows": [
     {
-      "parameter": "`styleCompilePath`",
+      "parameter": "`styleSourcePath`",
+      "type": "Directory Path as String",
+      "description": "Path of primary source directory for SCSS files. Expects a list of folder names separated by forward-slashes (`/`), and preceded by `./`"
+    },
+    {
+      "parameter": "`styleSourceFile`",
       "type": "String",
-      "description": "Path of the design systems CSS file, expects a list of forward-slash (`/`) separted folder names"
+      "description": "File name and extension of the main design system SCSS file"
+    },
+    {
+      "parameter": "`styleCompilePath`",
+      "type": "Directory Path as String",
+      "description": "Path of primary output directory for compiled CSS file. Expects a list of folder names separated by forward-slashes (`/`), and preceded by `./`"
     },
     {
       "parameter": "`styleCompileFile`",
       "type": "String",
-      "description": "File name and extenstion of the design system CSS file"
-    },
-    {
-      "parameter": "`language`",
-      "type": "String",
-      "description": "Defines the default language for the system in the `<html>` element’s `lang` attribute"
+      "description": "File name and extension of the compiled CSS file"
     }
   ]
 }

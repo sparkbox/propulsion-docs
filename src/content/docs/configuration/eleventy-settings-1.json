@@ -18,17 +18,22 @@
     {
       "parameter": "`defaultTemplateEngine`",
       "default_type": "String or `false`",
-      "description": "Define a template language or set to `false`"
+      "description": "Defines a template language or sets to `false`"
     },
     {
       "parameter": "`defaultMarkdownEngine`",
       "default_type": "String or `false`",
-      "description": "Define a template language or set to `false`"
+      "description": "Defines a template language or sets to `false`"
     },
     {
-      "templateFormats": "`defaultMarkdownEngine`",
+      "parameter": "`templateFormats`",
       "default_type": "Array",
-      "description": "Provide a comma-separated list of supported template formats within square brackets"
+      "description": "Expects a comma-separated list of supported template formats"
+    },
+    {
+      "parameter": "`previewTemplate`",
+      "default_type": "String",
+      "description": "?"
     }
   ]
 }

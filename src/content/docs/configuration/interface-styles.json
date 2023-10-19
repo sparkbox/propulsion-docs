@@ -18,7 +18,7 @@
     {
       "parameter": "`fontFamily`",
       "type": "Font Stack List",
-      "description": "Default font for the Propulsion interface, including the toolbars and documentation"
+      "description": "Defines fonts for the Propulsion interface, including the toolbars and documentation panel"
     },
     {
       "parameter": "`uiBackgroundColor`",
@@ -38,17 +38,17 @@
     {
       "parameter": "`uiLinkDefaultColor`",
       "type": "Color: `hsl()`, HEX, etc.",
-      "description": "Documentation default link color"
+      "description": "Default link color in documentation panel"
     },
     {
       "parameter": "`uiLinkHoverColor`",
       "type": "Color: `hsl()`, HEX, etc.",
-      "description": "Documentation hover state link color"
+      "description": "Hover state link color in documentation panel"
     },
     {
       "parameter": "`uiLinkVisitedColor`",
       "type": "Color: `hsl()`, HEX, etc.",
-      "description": "Documentation visited state link color"
+      "description": "Visited state link color in documentation panel"
     },
     {
       "parameter": "`uiSidebarWidth`",

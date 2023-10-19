@@ -18,12 +18,12 @@
     {
       "parameter": "`watch`",
       "default_type": "Array",
-      "description": "This parameter takes an array of directories from the projects root that the build will watch for changes when running `npm start`"
+      "description": "Expects an array of directories in the project's root. The build will watch for changes in those directories when running `npm start`"
     },
     {
       "parameter": "`copy`",
       "default_type": "Array of Objects",
-      "description": "The copy parameter takes an array of objects consisting of a key value pair of input and output directories. The input directories are relative to the project root directory, while the output directories are relative to the defined `main.output` directory."
+      "description": "Expects an array of objects, each consisting of a key-value pair of input and output directories. The input directories are relative to the project root directory, while the output directories are relative to the defined `main.output` directory."
     }
   ]
 }

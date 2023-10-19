@@ -18,27 +18,17 @@
     {
       "parameter": "`projectName`",
       "type": "String",
-      "description": "This is the project name, it will fill in the `<title>` and be displayed in the side bar top if no logo is provided"
+      "description": "Your project's name. Fills in the `<title>`, and displays at the top of the sidebar if no logo is provided"
     },
     {
       "parameter": "`projectLogo`",
       "type": "String",
-      "description": "This is the project logo, it will is displayed in the side bar top, and should be added as a path to an image file"
-    },
-    {
-      "parameter": "`styleCompilePath`",
-      "type": "String",
-      "description": "Path of the design systems CSS file, expects a list of forward-slash (`/`) separted folder names"
-    },
-    {
-      "parameter": "`styleCompileFile`",
-      "type": "String",
-      "description": "File name and extenstion of the design system CSS file"
+      "description": "Your project's logo. Displays at the top of the sidebar, and should be added as a path to an image file"
     },
     {
       "parameter": "`language`",
       "type": "String",
-      "description": "Defines the default language for the system in the `<html>` element’s `lang` attribute"
+      "description": "Defines the default language for the system as the `<html>` element’s `lang` attribute"
     }
   ]
 }
